@@ -1,3 +1,4 @@
+import React from "react";
 function OptionCard({ option, letter, isWinner }) {
   return (
     <div className={`card option-card ${isWinner ? "winner" : ""}`}>

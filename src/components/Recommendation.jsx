@@ -1,3 +1,4 @@
+import React from "react";
 function Recommendation({ recommendation, results }) {
   const winnerName =
     recommendation.winner === "option1"
