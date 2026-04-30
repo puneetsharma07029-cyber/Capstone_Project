@@ -11,7 +11,7 @@ function Recommendation({ recommendation, results }) {
         <div className="rec-trophy">🏆</div>
         <div>
           <div className="rec-label">AI Ki Final Salah</div>
-          <div className="rec-winner-name">{winnerName} better hai</div>
+          <div className="rec-winner-name">{winnerName} Better</div>
           <p className="rec-reason">{recommendation.reason}</p>
         </div>
       </div>

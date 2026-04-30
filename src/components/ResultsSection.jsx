@@ -9,7 +9,7 @@ function ResultsSection({ results, onReset }) {
     <div>
       <div className="results-header">
         <h2>Analysis Ready ✨</h2>
-        <p>Yeh raha AI ka detailed comparison</p>
+        <p>Final Comparison</p>
       </div>
 
       {/* Side by side cards */}
@@ -31,7 +31,7 @@ function ResultsSection({ results, onReset }) {
 
       {/* Try again */}
       <button className="btn-reset" onClick={onReset}>
-        ← Dobara Try Karein
+        ← Try Again
       </button>
     </div>
   );

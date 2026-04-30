@@ -35,8 +35,8 @@ function DecisionForm({ onAnalyze, loading }) {
       <div className="form-intro">
         <div className="form-intro-icon">⚖️</div>
         <div>
-          <h2>Kya compare karna hai?</h2>
-          <p>Dono options daalein aur AI baaki kaam karega</p>
+          <h2>What do you want to compare?</h2>
+          <p>Enter two options</p>
         </div>
       </div>
 

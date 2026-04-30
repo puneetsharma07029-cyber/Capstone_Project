@@ -14,7 +14,7 @@ function Header() {
       </h1>
 
       <p>
-        Do options daalein — AI unka comparison karke best choice batayega
+        Enter two options — the AI will compare them
       </p>
     </header>
   );
