@@ -10,7 +10,7 @@ function Recommendation({ recommendation, results }) {
       <div className="rec-inner">
         <div className="rec-trophy">🏆</div>
         <div>
-          <div className="rec-label">AI Ki Final Salah</div>
+          <div className="rec-label">Final Decision</div>
           <div className="rec-winner-name">{winnerName} Better</div>
           <p className="rec-reason">{recommendation.reason}</p>
         </div>

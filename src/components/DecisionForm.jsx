@@ -47,7 +47,7 @@ function DecisionForm({ onAnalyze, loading }) {
           <input
             className="input-field"
             type="text"
-            placeholder="Jaise: iPhone 15"
+            placeholder="e.g: iPhone 15"
             value={option1}
             onChange={(e) => setOption1(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && isReady && handleClick(e)}
@@ -61,7 +61,7 @@ function DecisionForm({ onAnalyze, loading }) {
           <input
             className="input-field"
             type="text"
-            placeholder="Jaise: Samsung S24"
+            placeholder="e.g: Samsung S24"
             value={option2}
             onChange={(e) => setOption2(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && isReady && handleClick(e)}
@@ -77,13 +77,11 @@ function DecisionForm({ onAnalyze, loading }) {
         </label>
         <textarea
           className="input-field"
-          placeholder="Koi khaas condition? Jaise: budget tight hai, gaming ke liye chahiye, gift dena hai..."
+          placeholder="Any specific requirements?"
           value={context}
           onChange={(e) => setContext(e.target.value)}
         />
       </div>
-
-      {/* Analyze button with ripple */}
       <button
         className="btn-analyze"
         onClick={handleClick}
@@ -92,7 +90,7 @@ function DecisionForm({ onAnalyze, loading }) {
         <span className="btn-icon">
           {loading ? "⟳" : "✦"}
         </span>
-        {loading ? "AI analyze kar raha hai..." : "Compare Karwao"}
+        {loading ? "AI is analyzing..." : "Compare Now"}
       </button>
     </div>
   );

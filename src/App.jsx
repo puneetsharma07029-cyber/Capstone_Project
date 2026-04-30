@@ -70,14 +70,14 @@ Respond ONLY in this exact JSON format, no extra text:
 
       const rawText = data.choices[0].message.content;
       const jsonMatch = rawText.match(/\{[\s\S]*\}/);
-      if (!jsonMatch) throw new Error("AI ka response parse nahi hua. Dobara koshish karein.");
+      if (!jsonMatch) throw new Error("Try Again.");
       setResults(JSON.parse(jsonMatch[0]));
 
     } catch (err) {
       if (err.name === "TypeError") {
-        setError("Network error — internet connection check karein.");
+        setError("Network error — Check your internet connection.");
       } else {
-        setError(err.message || "Kuch galat hua. Dobara koshish karein.");
+        setError(err.message || "Something Wrong. Try Again.");
       }
     } finally {
       setLoading(false);
