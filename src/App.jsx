@@ -6,8 +6,8 @@ import ResultsSection from "./components/ResultsSection";
 import LoadingSpinner from "./components/LoadingSpinner";
 import "./App.css";
 
-// 🔑 APNI OPENAI API KEY YAHAN DAALEIN
-const OPENAI_API_KEY = "YOUR_API_KEY_HERE";
+
+const OPENAI_API_KEY = "";
 
 function App() {
   const [results, setResults] = useState(null);
