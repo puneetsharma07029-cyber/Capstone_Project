@@ -30,7 +30,7 @@ function OptionCard({ option, letter, isWinner }) {
       <div className="pc-section">
         <div className="pc-heading pros">
           <span className="pc-dot" />
-          Fayde
+          Pros
         </div>
         <ul className="pc-list">
           {option.pros.map((pro, i) => (
@@ -46,7 +46,7 @@ function OptionCard({ option, letter, isWinner }) {
       <div className="pc-section">
         <div className="pc-heading cons">
           <span className="pc-dot" />
-          Nuksan
+          Cons
         </div>
         <ul className="pc-list">
           {option.cons.map((con, i) => (
