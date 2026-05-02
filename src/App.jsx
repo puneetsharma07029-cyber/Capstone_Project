@@ -45,10 +45,11 @@ Respond ONLY in this exact JSON format, no extra text:
     `;
 
     try {
-      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-      if (!apiKey) {
-        throw new Error("API key is missing. Please check your .env file.");
+      const base64Key = import.meta.env.VITE_GEMINI_API_KEY_B64;
+      if (!base64Key) {
+        throw new Error("Base64 API key is missing. Please check your .env file and set VITE_GEMINI_API_KEY_B64.");
       }
+      const apiKey = atob(base64Key);
 
       const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
         method: "POST",
